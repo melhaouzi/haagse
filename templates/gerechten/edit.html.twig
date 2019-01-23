@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Gerechten{% endblock %}
+
+{% block body %}
+    <h1>Edit Gerechten</h1>
+
+    {{ include('gerechten/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('gerechten_index') }}">back to list</a>
+
+    {{ include('gerechten/_delete_form.html.twig') }}
+{% endblock %}
